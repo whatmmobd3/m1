@@ -1,10 +1,17 @@
 import React from "react";
 import { connect } from "react-redux";
 
+import Button from "../Button/Button";
 class App extends React.Component {
   render() {
-    console.log(this.props.images);
-    return <p>Image Grid</p>;
+    return (
+      <div className="content">
+          <section className="grid">
+              
+          </section>
+        <Button loading={false}>Load More</Button>
+      </div>
+    );
   }
 }
 

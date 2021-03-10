@@ -1,4 +1,5 @@
 import React from "react";
+import './App.css'
 
 import ImageGrid from "./components/ImageGrid/ImageGrid";
 
@@ -11,7 +12,7 @@ class App extends React.Component {
     return (
       <Provider store={store}>
         <div>
-          <h2>What is javascript</h2>
+          <header className="header">What is javascript</header>
           <ImageGrid />
         </div>
       </Provider>
