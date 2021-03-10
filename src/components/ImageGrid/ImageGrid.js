@@ -10,9 +10,9 @@ class ImageGrid extends Component {
     componentDidMount() {
         this.props.loadImages();
     }
-
     render() {
-        const { isLoading, images, loadImages, error } = this.props;
+        const { isLoading, images, loadImages, error,imageStats } = this.props;
+        // console.log(imageStats("4vrZpOo7fTc"));
         return (
             <div className="content">
                 <section className="grid">
@@ -51,6 +51,7 @@ const mapStateToProps = ({ isLoading, images, error, imageStats }) => ({
 
 const mapDispatchToProps = dispatch => ({
     loadImages: () => dispatch(loadImages()),
+    
 });
 
 export default connect(
