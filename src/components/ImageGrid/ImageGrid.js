@@ -1,11 +1,15 @@
-import React from 'react'
+import React from "react";
+import { connect } from "react-redux";
 
 class App extends React.Component {
-    render() {
-        return(
-            <p>Image Grid</p>
-        )
-    }
+  render() {
+    console.log(this.props.images);
+    return <p>Image Grid</p>;
+  }
 }
 
-export default App
+const mapStateToProps = ({ images }) => ({
+  images,
+});
+
+export default connect(mapStateToProps, null)(App);
