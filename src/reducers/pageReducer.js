@@ -1,6 +1,6 @@
 import { IMAGES } from "../constants";
 
-const app = (state = 3, action) => {
+const app = (state = 1, action) => {
   switch (action.type) {
     case IMAGES.LOAD_SUCCESS:
       return state + 1;

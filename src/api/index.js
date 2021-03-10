@@ -1,7 +1,4 @@
-// import axios from "axios";
-
-const KEY =
-  "?client_id=5f96323678d05ff0c4eb264ef184556868e303b32a2db88ecbf15746e6f25e02";
+const KEY = "?client_id=47K75D2zwE_quO34auqFyBUUEM8LTjKR595WvZ3r6eI";
 const URL = `https://api.unsplash.com/photos/`;
 
 const fetchImages = async (page) => {
@@ -14,4 +11,4 @@ const fetchImages = async (page) => {
   return data;
 };
 
-export { fetchImages };
+export {fetchImages}

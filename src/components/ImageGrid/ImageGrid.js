@@ -12,7 +12,7 @@ class ImageGrid extends Component {
     }
 
     render() {
-        const { isLoading, images, loadImages, error, imageStats } = this.props;
+        const { isLoading, images, loadImages, error } = this.props;
         return (
             <div className="content">
                 <section className="grid">
