@@ -1,7 +1,6 @@
 import { STATS } from "../constants";
 
 const statsReducer = (state = {}, action) => {
-  console.log(action);
   switch (action.type) {
     case STATS.LOAD:
       return {
@@ -17,7 +16,7 @@ const statsReducer = (state = {}, action) => {
         ...state,
         [action.id]: {
           isLoading: false,
-          downloads: action.total,
+          downloads: action.downloads,
           error: false,
         },
       };

@@ -18,9 +18,10 @@ const loadStats = () => ({
   type: STATS.LOAD,
 });
 
-const setStats = (images) => ({
+const setStats = (id, downloads) => ({
   type: STATS.LOAD_SUCCESS,
-  images,
+  id,
+  downloads,
 });
 
 const setStatsError = (error) => ({
